@@ -2,7 +2,7 @@ import React from 'react';
 import Cart1 from './Cart1';
 
 const ProductSection1 = ({ DairyBread }) => {
-    console.log(DairyBread)
+    // console.log(DairyBread)
     return (
         <>
             <div className='productSectionMain'>

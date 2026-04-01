@@ -1,6 +1,5 @@
-import React from 'react';
 
-const Cart1 = ({ name, price, img, quantity, delivery_time }) => {
+const Cart3 = ({ name, price, img, quantity, delivery_time }) => {
 
     return (
         <div>
@@ -31,4 +30,4 @@ const Cart1 = ({ name, price, img, quantity, delivery_time }) => {
     );
 };
 
-export default Cart1;
+export default Cart3;
