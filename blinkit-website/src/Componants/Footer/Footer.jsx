@@ -3,11 +3,11 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <div class="footer-mid">
-                <div class="footer-mid-row1">
-                    <div class="footer-mid-row1-left">
+            <div className="footer-mid">
+                <div className="footer-mid-row1">
+                    <div className="footer-mid-row1-left">
                         <h3>Useful Links</h3>
-                        <div class="usefullink">
+                        <div className="usefullink">
                             <ul>
                                 <li>
                                     <a href="#">About</a>
@@ -40,12 +40,12 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-mid-row1-right">
-                        <div class="caregoryHeadingRow">
+                    <div className="footer-mid-row1-right">
+                        <div className="caregoryHeadingRow">
                             <h3>Categories</h3>
                             <a href="">see all</a>
                         </div>
-                        <div class="usefullink">
+                        <div className="usefullink">
                             <ul>
                                 <li>
                                     <a href="#">Vegetables & Fruits</a>
@@ -91,27 +91,27 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="footer-mid-row2">
+                <div className="footer-mid-row2">
                     <p>© Blink Commerce Private Limited, 2016-2025</p>
-                    <div class="appIcon">
+                    <div className="appIcon">
                         <h3>
                             Download App
                         </h3>
-                        <div class="appIcon-Img">
+                        <div className="appIcon-Img">
                             <img width="100px" src="https://blinkit.com/d61019073b700ca49d22.png" alt=""/>
                                 <img width="100px" src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt=""/>
                                 </div>
                         </div>
 
-                        <div class="appLogo">
-                            <i class="ri-facebook-circle-fill"></i>
-                            <i class="ri-twitter-fill"></i>
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-linkedin-box-fill"></i>
+                        <div className="appLogo">
+                            <i className="ri-facebook-circle-fill"></i>
+                            <i className="ri-twitter-fill"></i>
+                            <i className="ri-instagram-line"></i>
+                            <i className="ri-linkedin-box-fill"></i>
                             <img width="28px" src="https://blinkit.com/f01e50d66f4eddb1a1da.svg" alt=""/>
                         </div>
                     </div>
-                    <div class="footer-mid-row3">
+                    <div className="footer-mid-row3">
                         <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or
                             interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services
                             business operated by “Redstone Consultancy Services Private Limited”.</p>

@@ -3,8 +3,8 @@ import React from 'react';
 const Nav = () => {
     return (
         <header>
-            <div class="hederleft">
-                <div class="logo">
+            <div className="hederleft">
+                <div className="logo">
                     <a href="#">
                         <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -27,20 +27,20 @@ const Nav = () => {
                         </svg>
                     </a>
                 </div>
-                <div class="hederAddress">
+                <div className="hederAddress">
                     <h3>Delivery in 8 minutes</h3>
                     <p>112A, Suncity Success Tower</p>
                 </div>
             </div>
 
 
-            <form class="searchBox">
-                <button><i class="ri-search-2-line"></i></button>
+            <form className="searchBox">
+                <button><i className="ri-search-2-line"></i></button>
                 <input type="text" />
             </form>
-            <div class="hederBTN">
+            <div className="hederBTN">
                 <button>login</button>
-                <button><i class="ri-shopping-cart-line"></i>&nbsp; My Card</button>
+                <button><i className="ri-shopping-cart-line"></i>&nbsp; My Card</button>
             </div>
         </header>
     );

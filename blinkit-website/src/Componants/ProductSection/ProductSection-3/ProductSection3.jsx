@@ -3,7 +3,7 @@ import React from 'react';
 const ProductSection3 = () => {
     return (
         <div className="productSectionMain">
-            <section class="productSection">
+            <section className="productSection">
                 <div class="headingRow">
                     <h2>Dairy, Bread & Eggs</h2>
                     <a href="#">see all</a>
