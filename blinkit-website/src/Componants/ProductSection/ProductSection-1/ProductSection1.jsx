@@ -1,13 +1,13 @@
 import React from 'react';
 import Cart1 from './Cart1';
 
-const ProductSection1 = ({ DairyBread }) => {
+const ProductSection1 = ({ DairyBread, handleClick }) => {
     // console.log(DairyBread)
     return (
         <>
             <div className='productSectionMain'>
                 <section className="productSection">
-                    <div class="headingRow">
+                    <div className="headingRow">
                         <h2>Dairy, Bread & Eggs</h2>
                         <a href="#">see all</a>
                     </div>
@@ -16,6 +16,9 @@ const ProductSection1 = ({ DairyBread }) => {
                         {
                             DairyBread.map(item =>
                                 <Cart1
+                                key={item.name}
+                                    item={item}
+                                    handleClick={handleClick}
                                     category={item.category}
                                     delivery_time={item.delivery_time}
                                     img={item.img}

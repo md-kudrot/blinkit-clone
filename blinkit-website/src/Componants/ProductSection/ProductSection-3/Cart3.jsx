@@ -1,5 +1,5 @@
 
-const Cart3 = ({ name, price, img, quantity, delivery_time }) => {
+const Cart3 = ({ name, price, img, quantity, delivery_time,item, handleClick }) => {
 
     return (
         <div>
@@ -22,7 +22,7 @@ const Cart3 = ({ name, price, img, quantity, delivery_time }) => {
                     <p>{quantity}</p>
                     <div class="btnpr-ice-outer">
                         <b>{price}</b>
-                        <button>ADD</button>
+                        <button onClick={() => handleClick(item)}>ADD</button>
                     </div>
                 </div>
             </div>

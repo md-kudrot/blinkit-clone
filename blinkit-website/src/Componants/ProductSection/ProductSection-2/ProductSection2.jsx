@@ -1,7 +1,7 @@
 import React from 'react';
 import Cart2 from './Cart2';
 
-const ProductSection2 = ({ SnacksMunchies }) => {
+const ProductSection2 = ({ SnacksMunchies, handleClick }) => {
     // console.log(SnacksMunchies)
     return (
         <div className="productSectionMain">
@@ -16,6 +16,9 @@ const ProductSection2 = ({ SnacksMunchies }) => {
                     {
                         SnacksMunchies.map(item =>
                             <Cart2
+                                key={item.name}
+                                item = {item}
+                                handleClick={handleClick}
                                 category={item.category}
                                 delivery_time={item.delivery_time}
                                 img={item.img}

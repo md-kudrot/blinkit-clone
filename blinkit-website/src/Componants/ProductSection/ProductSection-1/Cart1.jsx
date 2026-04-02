@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Cart1 = ({ name, price, img, quantity, delivery_time }) => {
+const Cart1 = ({ name, price, img, quantity, delivery_time, handleClick, item }) => {
 
     return (
         <div>
-            <div class="productItem">
-                <div class="">
+            <div className="productItem">
+                <div className="">
                     <div className="productImg">
                         <img width="123px"
                             src={img}
@@ -18,12 +18,12 @@ const Cart1 = ({ name, price, img, quantity, delivery_time }) => {
                     </div>
 
                 </div>
-                <div class="productContant">
+                <div className="productContant">
                     <h3>{name}</h3>
                     <p>{quantity}</p>
-                    <div class="btnpr-ice-outer">
+                    <div className="btnpr-ice-outer">
                         <b>{price}</b>
-                        <button>ADD</button>
+                        <button onClick={() => handleClick(item)}>ADD</button>
                     </div>
                 </div>
             </div>
