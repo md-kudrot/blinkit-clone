@@ -5,6 +5,7 @@ import Footer from "./Componants/Footer/Footer"
 import Nav from "./Componants/Navbar/Nav"
 import OrderBanner from "./Componants/OrderBanner/OrderBanner"
 import AllProducts from "./Componants/ProductSection/AllProducts"
+import { ToastContainer, toast } from 'react-toastify';
 
 const allProdustsPromise = fetch("allProducts.json").then(res => res.json())
 
@@ -14,11 +15,13 @@ function App() {
   const handleClick = (cart) => {
     console.log(cart)
     SetSelectedItem([...selectedItem.filter(item => item.name !== cart.name), cart])
+    toast.success(`${cart.name} added successfully`)
   }
   
   const removeCart = (cart) => {
     SetSelectedItem([...selectedItem.filter(item => item.name !== cart.name)])
     console.log("this cart will be removed",cart)
+    toast.warning(`${cart.name} removed successfully`)
   }
 
   const showMyCart = ()=> {
@@ -47,6 +50,10 @@ function App() {
         handleClick={handleClick}
       ></AllProducts>
       <Footer></Footer>
+
+      <ToastContainer
+        autoClose={1000}
+      />
     </>
   )
 }
