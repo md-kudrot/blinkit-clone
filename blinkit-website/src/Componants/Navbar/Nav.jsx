@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Nav = () => {
+
+const Nav = ({ showMyCart }) => {
+  
     return (
         <header>
             <div className="hederleft">
@@ -40,8 +42,11 @@ const Nav = () => {
             </form>
             <div className="hederBTN">
                 <button>login</button>
-                <button><i className="ri-shopping-cart-line"></i>&nbsp; My Card</button>
+                <button onClick={()=> showMyCart()}><i className="ri-shopping-cart-line"></i>&nbsp; My Card</button>
             </div>
+            
+           
+
         </header>
     );
 };

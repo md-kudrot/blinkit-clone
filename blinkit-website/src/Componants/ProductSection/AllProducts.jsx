@@ -1,13 +1,13 @@
-import React, { use, useState } from 'react';
+import React, { use } from 'react';
 import { Suspense } from "react"
 import ProductSection1 from './ProductSection-1/ProductSection1';
 import ProductSection2 from './ProductSection-2/ProductSection2';
 import ProductSection3 from './ProductSection-3/ProductSection3';
 
 
-const AllProducts = ({ allProdustsPromise }) => {
+const AllProducts = ({ allProdustsPromise,handleClick }) => {
 
-    const [selectedItem, SetSelectedItem] = useState([])
+
 
     const allProducts = use(allProdustsPromise)
     const DairyBread = allProducts.filter(item => item.category === "Dairy, Bread & Eggs")
@@ -16,11 +16,7 @@ const AllProducts = ({ allProdustsPromise }) => {
     // console.log(allProducts)
     // console.log(FreshFruits)
 
-    const handleClick = (cart) => {
-        console.log(cart)
-        SetSelectedItem([...selectedItem, cart] )
-    }
-    console.log(selectedItem)
+
     return (
         <div>
             <Suspense fallback={<span className="loading loading-infinity loading-xl"></span>}>

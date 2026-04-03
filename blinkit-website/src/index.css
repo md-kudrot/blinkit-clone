@@ -1,12 +1,33 @@
+@import "tailwindcss";
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
 }
 
 button {
   cursor: pointer;
+}
+
+.pad {
+  background: rgba(107, 104, 104, 0.671);
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pad2 {
+  padding: 0.3rem;
 }
 
 header {
@@ -14,11 +35,12 @@ header {
   border-bottom: 1px solid #cccccc75;
   align-items: center;
   gap: 40px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  /* স্ক্রল করলে এটি স্ক্রিনের উপরে আটকে থাকবে */
+  left: 0;
+  right: 0;
   background: white;
-  /* z-index: 100; */
+  z-index: 100;
 }
 
 .hederleft {
@@ -203,7 +225,7 @@ header {
   object-fit: cover;
   padding: 20px;
   box-sizing: border-box;
-  
+
 }
 
 .productImg img {
@@ -383,7 +405,9 @@ header {
 }
 
 
-
+.popUp {
+  /* position: absolute; */
+}
 
 
 
