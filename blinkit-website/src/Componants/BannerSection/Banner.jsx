@@ -2,6 +2,7 @@ import React from 'react';
 import SelectedCart from '../BannerSection/SelectedCart';
 
 const Banner = ({ selectedItem, removeCart, showCart }) => {
+    
     return (
         <>
             <div className="p-8">

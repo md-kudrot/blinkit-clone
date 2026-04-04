@@ -29,7 +29,7 @@ function App() {
     setShowcart(!showCart)
   }
   console.log(showCart)
-  
+
   console.log(selectedItem)
   return (
     <>

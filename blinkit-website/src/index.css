@@ -30,6 +30,13 @@ button {
   padding: 0.3rem;
 }
 
+.total{
+  margin-top: 0.5rem;
+  padding: 1rem;
+  color: black;
+  
+}
+
 header {
   display: flex;
   border-bottom: 1px solid #cccccc75;
